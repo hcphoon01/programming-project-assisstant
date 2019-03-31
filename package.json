@@ -1,0 +1,16 @@
+{
+  "name": "programming-project-assisstant",
+  "version": "1.0.0",
+  "description": "An application to help with the management of programming projects",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "repository": "github:hcphoon01/programming-project-assisstant",
+  "author": "Harry Cameron",
+  "license": "ISC",
+  "devDependencies": {
+    "bulma": "^0.7.4",
+    "electron": "^4.1.3"
+  }
+}
