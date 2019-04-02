@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../node_modules/bulma/css/bulma.css"/>
+    <link rel="stylesheet" href="../node_modules/@fortawesome/fontawesome-free/css/fontawesome.css">
+    <link rel="stylesheet" href="assets/css/landing.css">
+    <title>Programming Project Assisstant</title>
+</head>
+<body>
+    <div class="bg">
+        <div class="center">
+            <h2 class="is-size-2 has-text-white">Programming Project Assisstant</h2>
+            <br>
+            <a onclick="loadIndex()" class="button is-info is-rounded is-centered is-medium">Get Started</a>
+        </div>
+    </div>
+</body>
+<script>
+    const { ipcRenderer } = require("electron");
+
+    function loadIndex() {
+        ipcRenderer.send("changeWindow", "index");
+    }
+</script>
+</html>
